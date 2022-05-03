@@ -46,6 +46,7 @@ class _listBuilder extends StatelessWidget {
         itemCount: _doc.length,
         itemBuilder: (context, index) {
           return Container(
+            margin: const EdgeInsets.all(8.0),
             width: 150,
             padding: const EdgeInsets.all(8.0),
             decoration: BoxDecoration(

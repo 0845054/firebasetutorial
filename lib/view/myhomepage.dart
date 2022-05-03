@@ -13,11 +13,27 @@ class MyHomePage extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: const [
+            AppTitle(),
             AddUser(),
             ShowCollection(),
             DeleteButton(),
           ],
         ),
+      ),
+    );
+  }
+}
+
+class AppTitle extends StatelessWidget {
+  const AppTitle({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      margin: const EdgeInsets.all(8.0),
+      child: const Text(
+        'Firebase Tutorial 1',
+        style: TextStyle(fontSize: 24, fontWeight: FontWeight.w700),
       ),
     );
   }
