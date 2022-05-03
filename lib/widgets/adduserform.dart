@@ -1,5 +1,5 @@
 import 'package:firebasetutorial/constants/constants.dart';
-import 'package:firebasetutorial/firebasewidgets/firebasewidgets.dart';
+import 'package:firebasetutorial/widgets/firebasewidgets/firebasewidgets.dart';
 import 'package:flutter/material.dart';
 
 class AddUser extends StatelessWidget {
@@ -64,8 +64,8 @@ class AddUser extends StatelessWidget {
     void _onAddUser() {
       if (_formKey.currentState!.validate()) {
         String _name = _nameController.text;
-        int _age =  int.parse(_ageController.text);
-        FireBaseWidgets.addUser(_name,_age);
+        int _age = int.parse(_ageController.text);
+        FireBaseWidgets.addUser(_name, _age);
         _nameController.clear();
         _ageController.clear();
       }
@@ -76,9 +76,7 @@ class AddUser extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.all(10),
       width: constants.BOX_WIDTH,
-      decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(20),
-          border: Border.all(color: Color(constants.BORDER_COLOR))),
+      decoration: BoxDecoration(borderRadius: BorderRadius.circular(20), border: Border.all(color: Color(constants.BORDER_COLOR))),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: [

@@ -9,13 +9,15 @@ class MyHomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: const [
-          AddUser(),
-          ShowCollection(),
-          DeleteButton(),
-        ],
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: const [
+            AddUser(),
+            ShowCollection(),
+            DeleteButton(),
+          ],
+        ),
       ),
     );
   }

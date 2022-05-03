@@ -1,5 +1,5 @@
 import 'package:firebasetutorial/constants/constants.dart';
-import 'package:firebasetutorial/firebasewidgets/firebasewidgets.dart';
+import 'package:firebasetutorial/widgets/firebasewidgets/firebasewidgets.dart';
 import 'package:flutter/material.dart';
 
 class DeleteButton extends StatelessWidget {
@@ -10,8 +10,7 @@ class DeleteButton extends StatelessWidget {
     return Container(
       width: constants.BOX_WIDTH,
       decoration: BoxDecoration(borderRadius: BorderRadius.circular(20)),
-      child:const ElevatedButton(
-          onPressed: FireBaseWidgets.deleteAll, child: Text('Delete All Records')),
+      child: const ElevatedButton(onPressed: FireBaseWidgets.deleteAll, child: Text('Delete All Records')),
     );
   }
 }

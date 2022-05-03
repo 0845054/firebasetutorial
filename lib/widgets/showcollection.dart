@@ -1,7 +1,7 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebasetutorial/constants/constants.dart';
 import 'package:flutter/material.dart';
-import 'package:firebasetutorial/firebasewidgets/firebasewidgets.dart';
+import 'package:firebasetutorial/widgets/firebasewidgets/firebasewidgets.dart';
 
 class ShowCollection extends StatelessWidget {
   const ShowCollection({Key? key}) : super(key: key);
